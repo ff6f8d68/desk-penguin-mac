@@ -1,0 +1,38 @@
+{
+  "name": "pmdesktop",
+  "main": "electron-main.js",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder --mac --x64 --arm64"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "build": {
+    "appId": "discord.atom20003113.pmdesktop-mac",
+    "mac": {
+      "target": [
+        "pkg",
+        "dmg",
+        "zip"
+      ],
+      "icon": "icon.icns",
+      "category": "public.app-category.productivity",
+      "identity": null
+    },
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "build/**/*"
+    ]
+  }
+}
