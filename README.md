@@ -20,4 +20,3 @@ npm install
 ```bash
 npm run build
 ```
-## if you dont want to or cant build this repo just download a [release](https://github.com/ff6f8d68/desk-penguin-mac/releases)
